@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'widgets/navbar.dart';
 import 'utils/responsive_layout.dart';
 import 'widgets/search.dart';
