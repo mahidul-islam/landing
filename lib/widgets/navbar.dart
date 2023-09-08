@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../utils/responsive_layout.dart';
 
 class NavBar extends StatelessWidget {
-  final navLinks = ["Home", "Products", "Features", "Contact"];
+  final navLinks = ["Home", "Products", "Features", "Contact", "oooook"];
 
   NavBar({super.key});
 
@@ -57,11 +57,11 @@ class NavBar extends StatelessWidget {
                   width: 120,
                   height: 40,
                   decoration: BoxDecoration(
-                      gradient: const LinearGradient(
-                          colors: [Color(0xFFC86DD7), Color(0xFF3023AE)],
-                          begin: Alignment.bottomRight,
-                          end: Alignment.topLeft),
-                      borderRadius: BorderRadius.circular(20),
+                      gradient: const LinearGradient(colors: [
+                        Color.fromARGB(255, 160, 37, 182),
+                        Color(0xFF3023AE)
+                      ], begin: Alignment.bottomRight, end: Alignment.topLeft),
+                      borderRadius: BorderRadius.circular(30),
                       boxShadow: [
                         BoxShadow(
                             color: const Color(0xFF6078ea).withOpacity(.3),

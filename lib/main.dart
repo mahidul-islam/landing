@@ -20,8 +20,8 @@ class HomePage extends StatelessWidget {
     return Container(
       decoration: const BoxDecoration(
           gradient: LinearGradient(colors: [
-        Color(0xFFF8FBFF),
-        Color(0xFFFCFDFD),
+        Color.fromARGB(255, 238, 205, 209),
+        Color.fromARGB(255, 209, 245, 245),
       ])),
       child: Scaffold(
         backgroundColor: Colors.transparent,

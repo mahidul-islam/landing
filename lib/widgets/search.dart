@@ -8,16 +8,16 @@ class Search extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(
+      padding: const EdgeInsets.only(
         left: 4.0,
-        right: ResponsiveLayout.isSmallScreen(context) ? 4 : 74,
+        right: 6,
         top: 10,
         bottom: 40,
       ),
       child: Container(
         height: 60,
         decoration: BoxDecoration(
-            color: Colors.white,
+            color: Color.fromARGB(255, 187, 182, 182),
             borderRadius: BorderRadius.circular(30),
             boxShadow: const [
               BoxShadow(
