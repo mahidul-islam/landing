@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'widgets/navbar.dart';
 import 'utils/responsive_layout.dart';
 import 'widgets/search.dart';
+import 'test.dart';
+import 'widgets/Gheu.dart';
 
 void main() => runApp(MaterialApp(
       title: 'Flutter Landing Page',
@@ -24,11 +26,19 @@ class HomePage extends StatelessWidget {
         Color.fromARGB(255, 209, 245, 245),
       ])),
       child: Scaffold(
+        drawer: const QQ(),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => MyApp()),
+            );
+          },
+          child: const Icon(Icons.settings), // You can use any icon you like.
+        ),
         backgroundColor: Colors.transparent,
-        body: SingleChildScrollView(
-          child: Column(
-            children: <Widget>[NavBar(), const Body()],
-          ),
+        body: const SingleChildScrollView(
+          child: Body(),
         ),
       ),
     );
